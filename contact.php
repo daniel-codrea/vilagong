@@ -51,7 +51,7 @@ if(isset($_POST['submit'])) {
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vila Gong | Bine ati venit</title>
+    <title>Vila Gong | Contact</title>
     <link rel="stylesheet" href="css/foundation.css" />
     <link href="css/colorbox.css" rel="stylesheet" />
       <link href="css/font-awesome.css" rel="stylesheet" />
