@@ -75,9 +75,9 @@ if(isset($_POST['submit'])) {
                 </div>
                 <div id="lang" class="right">
                     <ul class="inline-list">
-                        <li><a href="#"><img src="img/Romania.png" alt="Romnian" /></a></li>
-                        <li><a href="#"><img src="img/United-Kingdom.png" alt="English" /></a></li>
-                        <li><a href="#"><img src="img/Hungary.png" alt="Hungarian" /></a></li>
+                        <li><a href="contact.php"><img src="img/Romania.png" alt="Romnian" /></a></li>
+                        <li><a href="en/contact/php"><img src="img/United-Kingdom.png" alt="English" /></a></li>
+                        <li><a href="hu/kapcsolat.php"><img src="img/Hungary.png" alt="Hungarian" /></a></li>
                     </ul>
                 </div>
                 <div class="clearfix"></div>

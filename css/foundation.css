@@ -275,6 +275,9 @@ p.bjqs-caption{display:block;width:96%;margin:0;padding:2%;position:absolute;bot
 #home1{position:absolute; top:20px; right:0;}
 #home2{position:absolute; top:80px; left:0;}
 #home3{position:absolute; top:160px; right:40px;}
+#room1{position:absolute; top:60px; right:0;}
+#room2{position:absolute; top:120px; left:0;}
+#room3{position:absolute; top:200px; right:40px;}
 nav ul{overflow: visible !important;}
 .sub-menu{display:none !important; position:absolute; top:50px; left:0; background: rgba(0,0,0,0.95); z-index:100; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; width:200px; -webkit-animation: fadeIn 1s; -moz-animation: fadeIn 1s; animation: fadeIn 1s;}
 .sub-menu li{list-style:none; padding:10px 15px; line-height:22px !important;}
@@ -282,6 +285,11 @@ nav ul li:hover ul.sub-menu {display:block !important; -webkit-animation: fadeIn
 p.small{font-size: 80%;}
 #gal-foto a{width:185px; height:185px; overflow:hidden; position:relative; line-height:195px\9; text-align:center\9; background:#fff; padding:4px; border:1px solid #ccc; border-radius:5px; display: block;}
 #gal-foto a img{max-width:185px; max-height:185px; position: absolute; top: 50%; left: 50%; -webkit-transform: translateX(-50%) translateY(-50%); -moz-transform: translateX(-50%) translateY(-50%); -ms-transform: translateX(-50%) translateY(-50%); -o-transform: translateX(-50%) translateY(-50%); transform: translateX(-50%) translateY(-50%); position: relative\9; top: auto\9; left: auto\9; vertical-align: middle\9; }
+
+.camere{margin-top:-20px;}
+.camere td{border-bottom:1px solid #ccc; padding:5px 10px; font-size:90%;}
+.camere tr:nth-child(even){background:#dfdfdf;}
+.camere td img{opacity:.7; width:20px; height:20px}
 
 
 
