@@ -61,7 +61,7 @@ if(isset($_POST['submit'])) {
   <body>
       <div class="row collapse">
           <div class="small-12 columns">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21868.34633210264!2d23.3880272!3d46.75418665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf3966c6135ac4a16!2sVila+Gong!5e0!3m2!1sen!2s!4v1396100270279" width="940" height="400" frameborder="0" style="border:0; margin-bottom:-2px;"></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d87485.6226747592!2d23.388431!3d46.74664699999999!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47491ad95cca95e1%3A0xf3966c6135ac4a16!2sVila+Gong!5e0!3m2!1sen!2s!4v1396411873804" width="940" height="400" frameborder="0" style="border:0; margin-bottom:-2px;"></iframe>
           </div>
       </div>
     
@@ -106,7 +106,6 @@ if(isset($_POST['submit'])) {
                     <li><a href="galerie_foto.html">Galerie Foto</a></li>
                     <li><a href="oferte.html">Oferte</a></li>
                     <li><a href="atractii.html">Atractii</a></li>
-                    <li><a href="evenimente.html">Evenimente</a></li>
                     <li><a class="active" href="contact.php">Contact</a></li>
                 </ul>
             </nav>  

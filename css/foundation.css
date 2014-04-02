@@ -262,12 +262,12 @@ p.bjqs-caption{display:block;width:96%;margin:0;padding:2%;position:absolute;bot
 #siteTop{position:fixed; top:0; left:0; width:100%; height: 106px; background: url(../img/top_menu.png) repeat-x; z-index:5;}
 #logo{position: relative; padding:10px 0 0 0; width: 211px; height:86px; z-index: 10;}
 #lang{padding:17px 20px 0 0;}
-#bookings{width:388px; height:67px; position:absolute; top:0; left:50%; margin-left:-194px; background:url(../img/rezervari_buton.png); cursor:pointer;}
+#bookings{width:194px; height:34px; position:absolute; top:0; left:50%; margin-left:-97px; background:url(../img/rezervari_buton.png); cursor:pointer;}
 #bookings:hover{ background:url(../img/rezervari_buton_hov.png);}
-#bookings p{text-align:center; color:#fff; text-shadow:1px 1px 1px rgba(0,0,0,0.95); line-height:63px; font-size:18px;}
+#bookings p{text-align:center; color:#fff; text-shadow:1px 1px 1px rgba(0,0,0,0.95); line-height:32px; font-size:14px;}
 #menu{background:url(../img/menu.png) repeat-x; height:54px;}
 #menu ul{margin:0;}
-#menu li{line-height: 50px; padding-right:45px;}
+#menu li{line-height: 50px; padding-right:73px;}
 #menu li:last-of-type{padding-right:0;}
 #menu a{font-family:'open_sanssemibold'; color:#fff; text-shadow:1px 0 1px #000;}
 #menu a.active{color:#88211a;}
@@ -275,9 +275,14 @@ p.bjqs-caption{display:block;width:96%;margin:0;padding:2%;position:absolute;bot
 #home1{position:absolute; top:20px; right:0;}
 #home2{position:absolute; top:80px; left:0;}
 #home3{position:absolute; top:160px; right:40px;}
-#room1{position:absolute; top:60px; right:0;}
-#room2{position:absolute; top:120px; left:0;}
-#room3{position:absolute; top:200px; right:40px;}
+#room1, #room1-1{position:absolute; top:60px; right:0;}
+#room2, #room2-1{position:absolute; top:180px; left:0;}
+#room3, #room3-1{position:absolute; top:320px; right:40px;}
+#room1-2{position:absolute; top:80px; left:20px;}
+#rest1{position:absolute; top:60px; right:0;}
+#rest2{position:absolute; top:120px; left:0;}
+#rest3{position:absolute; top:200px; right:40px;}
+.room, .rest{box-shadow:0 0 6px rgba(0,0,0,0.9); border-radius:3px;}
 nav ul{overflow: visible !important;}
 .sub-menu{display:none !important; position:absolute; top:50px; left:0; background: rgba(0,0,0,0.95); z-index:100; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; width:200px; -webkit-animation: fadeIn 1s; -moz-animation: fadeIn 1s; animation: fadeIn 1s;}
 .sub-menu li{list-style:none; padding:10px 15px; line-height:22px !important;}
@@ -286,10 +291,12 @@ p.small{font-size: 80%;}
 #gal-foto a{width:185px; height:185px; overflow:hidden; position:relative; line-height:195px\9; text-align:center\9; background:#fff; padding:4px; border:1px solid #ccc; border-radius:5px; display: block;}
 #gal-foto a img{max-width:185px; max-height:185px; position: absolute; top: 50%; left: 50%; -webkit-transform: translateX(-50%) translateY(-50%); -moz-transform: translateX(-50%) translateY(-50%); -ms-transform: translateX(-50%) translateY(-50%); -o-transform: translateX(-50%) translateY(-50%); transform: translateX(-50%) translateY(-50%); position: relative\9; top: auto\9; left: auto\9; vertical-align: middle\9; }
 
-.camere{margin-top:-20px;}
-.camere td{border-bottom:1px solid #ccc; padding:5px 10px; font-size:90%;}
-.camere tr:nth-child(even){background:#dfdfdf;}
+.camere, .restaurant, .conference{margin-top:-20px;}
+.camere td. restaurant td, .conference td{border-bottom:1px solid #ccc; padding:5px 10px; font-size:90%;}
+.restaurant td, .conference td{padding:10px;}
+.camere tr:nth-child(even), .restaurant tr:nth-child(even){background:#dfdfdf;}
 .camere td img{opacity:.7; width:20px; height:20px}
+.conference td img{opacity:.5; width:70px; height:70px}
 
 
 
