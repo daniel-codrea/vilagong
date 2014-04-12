@@ -266,9 +266,8 @@ p.bjqs-caption{display:block;width:96%;margin:0;padding:2%;position:absolute;bot
 #bookings:hover{ background:url(../img/rezervari_buton_hov.png);}
 #bookings p{text-align:center; color:#fff; text-shadow:1px 1px 1px rgba(0,0,0,0.95); line-height:32px; font-size:14px;}
 #menu{background:url(../img/menu.png) repeat-x; height:54px;}
-#menu ul{margin:0;}
-#menu li{line-height: 50px; padding-right:73px;}
-#menu li:last-of-type{padding-right:0;}
+#menu ul{margin:0; padding:0 2px}
+#menu li{line-height: 50px; padding:0; margin:0; width:151px; display:block; text-align:center;}
 #menu a{font-family:'open_sanssemibold'; color:#fff; text-shadow:1px 0 1px #000;}
 #menu a.active{color:#88211a;}
 .content{background:rgba(255,255,255,0.8); box-shadow:inset 0 0 15px rgba(0,0,0,0.8); border-radius:10px;}
@@ -284,8 +283,8 @@ p.bjqs-caption{display:block;width:96%;margin:0;padding:2%;position:absolute;bot
 #rest3{position:absolute; top:200px; right:40px;}
 .room, .rest{box-shadow:0 0 6px rgba(0,0,0,0.9); border-radius:3px;}
 nav ul{overflow: visible !important;}
-.sub-menu{display:none !important; position:absolute; top:50px; left:0; background: rgba(0,0,0,0.95); z-index:100; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; width:200px; -webkit-animation: fadeIn 1s; -moz-animation: fadeIn 1s; animation: fadeIn 1s;}
-.sub-menu li{list-style:none; padding:10px 15px; line-height:22px !important;}
+.sub-menu{display:none !important; position:absolute; top:50px; left:0; background: rgba(0,0,0,0.95); z-index:100; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; width:200px; -webkit-animation: fadeIn 1s; -moz-animation: fadeIn 1s; animation: fadeIn 1s; margin:0;}
+#menu li .sub-menu li{list-style:none; padding:10px 15px; line-height:22px !important; display:block; margin:0; width:200px; text-align:left;}
 nav ul li:hover ul.sub-menu {display:block !important; -webkit-animation: fadeIn 1s; -moz-animation: fadeIn 1s; animation: fadeIn 1s;}
 p.small{font-size: 80%;}
 #gal-foto a{width:185px; height:185px; overflow:hidden; position:relative; line-height:195px\9; text-align:center\9; background:#fff; padding:4px; border:1px solid #ccc; border-radius:5px; display: block;}
