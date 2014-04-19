@@ -84,7 +84,7 @@ if(isset($_POST['submit'])) {
             </div>
         </div>
         <div id="bookings">
-            <p class="semibolditalic">Online booking</p>
+            <p class="semibolditalic"><a href="https://vilagong.book-onlinenow.net/">Online booking</a></p>
         </div>
     </div>
 

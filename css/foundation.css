@@ -265,6 +265,7 @@ p.bjqs-caption{display:block;width:96%;margin:0;padding:2%;position:absolute;bot
 #bookings{width:194px; height:34px; position:absolute; top:0; left:50%; margin-left:-97px; background:url(../img/rezervari_buton.png); cursor:pointer;}
 #bookings:hover{ background:url(../img/rezervari_buton_hov.png);}
 #bookings p{text-align:center; color:#fff; text-shadow:1px 1px 1px rgba(0,0,0,0.95); line-height:32px; font-size:14px;}
+#bookings a{color:#fff;}
 #menu{background:url(../img/menu.png) repeat-x; height:54px;}
 #menu ul{margin:0; padding:0 2px}
 #menu li{line-height: 50px; padding:0; margin:0; width:151px; display:block; text-align:center;}
@@ -289,6 +290,7 @@ nav ul li:hover ul.sub-menu {display:block !important; -webkit-animation: fadeIn
 p.small{font-size: 80%;}
 #gal-foto a{width:185px; height:185px; overflow:hidden; position:relative; line-height:195px\9; text-align:center\9; background:#fff; padding:4px; border:1px solid #ccc; border-radius:5px; display: block;}
 #gal-foto a img{max-width:185px; max-height:185px; position: absolute; top: 50%; left: 50%; -webkit-transform: translateX(-50%) translateY(-50%); -moz-transform: translateX(-50%) translateY(-50%); -ms-transform: translateX(-50%) translateY(-50%); -o-transform: translateX(-50%) translateY(-50%); transform: translateX(-50%) translateY(-50%); position: relative\9; top: auto\9; left: auto\9; vertical-align: middle\9; }
+#atractii img{box-shadow: 0 0 10px rgba(0,0,0,0.85);}
 
 .camere, .restaurant, .conference{margin-top:-20px;}
 .camere td. restaurant td, .conference td{border-bottom:1px solid #ccc; padding:5px 10px; font-size:90%;}
@@ -298,11 +300,35 @@ p.small{font-size: 80%;}
 .conference td img{opacity:.5; width:70px; height:70px}
 
 
+#modal1, #modal2, #modal3, #modal4 {display:none;}
 
+/* Overlay */
+#simplemodal-overlay {background-color:#000;}
+.row.simplemodal-data{max-width:1074px !important;}
+.overlayText{height:450px; overflow:auto;}
+/* Container */
+#simplemodal-container {height:600px; width:1100px; color:#000; background-color:#fff; border:1px solid #444; padding:12px; box-shadow:0 0 6px #000;}
+#simplemodal-container h3{text-align:center;}
+#simplemodal-container .simplemodal-data {padding:8px;}
+#simplemodal-container a.modalCloseImg{position: absolute; top:0; right:0;}
+#simplemodal-container a.modalCloseImg:after {content: "\f00d"; font-family: FontAwesome; font-style: normal; font-weight: normal; text-decoration: inherit; color: #88211a; font-size: 20px; position: absolute; top: 10px; right: 10px; cursor:pointer;}
+.overlayText{padding-right:25px; margin:10px;}
+.overlayText p{margin:3px 0;}
+.overlayText ul{margin-left:40px;}
+
+.scrollbox {overflow: auto; width: 380px; height: 280px;}
+.vertical-track {width: 8px; background-color: rgba(255,255,255,0.5); -webkit-border-radius:3px; -moz-border-radius:3px; border-radius:3px;}
+.vertical-handle {width: 8px; background-color: rgba(0,0,0,0.3); -webkit-border-radius:3px; -moz-border-radius:3px; border-radius:3px;}
+.bjqs-markers{height:12px;}
+.bjqs-markers li{width:12px; height:12px; border-radius: 30px; background: #fff; border:1px solid #000; box-shadow:inset 0 0 4px #000; margin:0 3px; font-size:8px; line-height:12px;}
+.bjqs-markers li.active-marker{background:#88211a; box-shadow:0 0 4px #000;}
+.bjqs-markers a{display:block; width:12px; height:12px; color:transparent; font-size:8px; line-height:12px;}
+#slides, #slides2, #slides3, #slides4{box-shadow: 0 0 10px rgba(0,0,0,0.85);}
 
 
 .spacer20{height:20px; line-height:1; font-size:10px; margin:0; padding:0; border:0;}
 .p20{padding:20px;}
+.pLR20{padding:0 20px;}
 .pozRel{position:relative;}
 .hidden {display: none !important; visibility: hidden;}
 .mL5{margin-left:5px;}

@@ -84,7 +84,7 @@ if(isset($_POST['submit'])) {
             </div>
         </div>
         <div id="bookings">
-            <p class="semibolditalic">Rezervari online</p>
+            <p class="semibolditalic"><a href="https://vilagong.book-onlinenow.net/">Rezervari online</a></p>
         </div>
     </div>
       
@@ -105,7 +105,7 @@ if(isset($_POST['submit'])) {
                     </li>
                     <li><a href="galerie_foto.html">Galerie Foto</a></li>
                     <li><a href="oferte.html">Oferte</a></li>
-                    <li><a href="atractii.html">Atractii</a></li>
+                    <li><a href="atractii.html">Atracţii</a></li>
                     <li><a class="active" href="contact.php">Contact</a></li>
                 </ul>
             </nav>  

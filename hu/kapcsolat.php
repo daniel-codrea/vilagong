@@ -84,7 +84,7 @@ if(isset($_POST['submit'])) {
             </div>
         </div>
         <div id="bookings">
-            <p class="semibolditalic">Online foglalás</p>
+            <p class="semibolditalic"><a href="https://vilagong.book-onlinenow.net/">Online foglalás</a></p>
         </div>
     </div>
 
@@ -105,7 +105,7 @@ if(isset($_POST['submit'])) {
                     </li>
                     <li><a href="kepgaleria.html">Képgaléria</a></li>
                     <li><a href="ajanlat.html">Ajánlat</a></li>
-                    <li><a href="kornyek.html">Környék</a></li>
+                    <li><a href="latnivalok.html">Látnivalók</a></li>
                     <li><a class="active" href="kapcsolat.php">Kapcsolat</a></li>
                 </ul>
             </nav>
