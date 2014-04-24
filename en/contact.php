@@ -119,11 +119,12 @@ if(isset($_POST['submit'])) {
                     <div class="p20">
                         <p class="spacer20">&nbsp;</p>
                         <p>Address: 407310 Gilău, 1153/C Someşul Rece street, Cluj county</p>
+                        <p>GPS: 46.75/23.383</p>
                         <p>Phone: +40-264-371468, +40-723-193977</p>
                         <p>Fax: +40-264-371498</p>
                         <p>Email: info@vilagong.ro</p>
                         <p>Web: http://www.vilagong.ro/</p>
-                        <p class="small"><span class="semibold">SC Rentaporta Import Export SRL</span>, VAT: J12/2665/1993, Fiscal code: 4341094</p>
+                        <p class="small"><span class="semibold">SC Rentaporta Import Export SRL</span><br />VAT: J12/2665/1993<br />Fiscal code: 4341094</p>
                         <p class="spacer20">&nbsp;</p>
                     </div>
                 </div>

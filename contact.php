@@ -96,11 +96,11 @@ if(isset($_POST['submit'])) {
             <nav>
                 <ul class="inline-list">
                     <li><a href="index.html">Home</a></li>
-                    <li class="pozRel"><a href="#">Facilitati <i class="fa fa-caret-down fa-lg mL5"></i></a>
+                    <li class="pozRel"><a href="#">Facilităţi <i class="fa fa-caret-down fa-lg mL5"></i></a>
                         <ul class="sub-menu">
                             <li><a href="camere.html">Camere</a></li>
                             <li><a href="restaurant.html">Restaurant</a></li>
-                            <li><a href="sala_conferinte.html">Sala de Conferinte</a></li>
+                            <li><a href="sala_conferinte.html">Sala de Conferinţe</a></li>
                         </ul>    
                     </li>
                     <li><a href="galerie_foto.html">Galerie Foto</a></li>
@@ -119,17 +119,18 @@ if(isset($_POST['submit'])) {
                     <div class="p20">
                         <p class="spacer20">&nbsp;</p>
                         <p>Adresa: 407310 Gilău, Str. Someşul Rece, Nr. 1153/C, Jud. Cluj</p>
+                        <p>GPS: 46.75/23.383</p>
                         <p>Telefon: +40-264-371468, +40-723-193977</p>
                         <p>Fax: +40-264-371498</p>
                         <p>Email: info@vilagong.ro</p>
                         <p>Web: http://www.vilagong.ro/</p>
-                        <p class="small"><span class="semibold">SC Rentaporta Import Export SRL</span>, Nr. RC: J12/2665/1993, Cod fiscal: 4341094</p>
+                        <p class="small"><span class="semibold">SC Rentaporta Import Export SRL</span><br />Nr. RC: J12/2665/1993<br />Cod fiscal: 4341094</p>
                         <p class="spacer20">&nbsp;</p>
                     </div>
                 </div>
                 <div class="small-6 columns">
                     <div class="p20">
-                        <h4>Lasati-ne un mesaj</h4>
+                        <h4>Lăsaţi-ne un mesaj</h4>
                         <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>" id="contactForm">
                             <input type="text" name="name" placeholder="Nume" />
                             <input type="email" name="email" placeholder="Email" />

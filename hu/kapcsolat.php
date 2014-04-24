@@ -118,18 +118,19 @@ if(isset($_POST['submit'])) {
                 <div class="small-6 columns">
                     <div class="p20">
                         <p class="spacer20">&nbsp;</p>
-                        <p>Postacím: 407310 Gilău, 1153/C Someşul Rece utca, Cluj megye</p>
+                        <p>Postacím: Str. Someșul Rece Nr. 1153/C, 407310 Gilău, jud. Cluj</p>
+                        <p>GPS: 46.75/23.383</p>
                         <p>Telefon: +40-264-371468, +40-723-193977</p>
                         <p>Fax: +40-264-371498</p>
                         <p>Email: info@vilagong.ro</p>
                         <p>Web: http://www.vilagong.ro/</p>
-                        <p class="small"><span class="semibold">SC Rentaporta Import Export SRL</span>, Bejegyzési rendszám: J12/2665/1993, Bejegyzési kod: 4341094</p>
+                        <p class="small"><span class="semibold">SC Rentaporta Import Export SRL</span><br />Bejegyzési rendszám: J12/2665/1993<br />Adószám: RO4341094</p>
                         <p class="spacer20">&nbsp;</p>
                     </div>
                 </div>
                 <div class="small-6 columns">
                     <div class="p20">
-                        <h4>Hagyanak üzenetett</h4>
+                        <h4>Hagyjon üzenet</h4>
                         <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>" id="contactForm">
                             <input type="text" name="name" placeholder="Név" />
                             <input type="email" name="email" placeholder="Email" />
