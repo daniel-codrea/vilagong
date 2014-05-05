@@ -124,13 +124,13 @@ if(isset($_POST['submit'])) {
                         <p>Fax: +40-264-371498</p>
                         <p>Email: info@vilagong.ro</p>
                         <p>Web: http://www.vilagong.ro/</p>
-                        <p class="small"><span class="semibold">SC Rentaporta Import Export SRL</span><br />Bejegyzési rendszám: J12/2665/1993<br />Adószám: RO4341094</p>
+                        <p class="small"><span class="semibold">SC Rentaporta Import Export SRL</span><br />Cég bejegyzési száma:  J12/2665/1993<br />Adószám: RO4341094</p>
                         <p class="spacer20">&nbsp;</p>
                     </div>
                 </div>
                 <div class="small-6 columns">
                     <div class="p20">
-                        <h4>Hagyjon üzenet</h4>
+                        <h4>Hagyjon üzenetet</h4>
                         <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>" id="contactForm">
                             <input type="text" name="name" placeholder="Név" />
                             <input type="email" name="email" placeholder="Email" />

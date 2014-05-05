@@ -124,7 +124,7 @@ if(isset($_POST['submit'])) {
                         <p>Fax: +40-264-371498</p>
                         <p>Email: info@vilagong.ro</p>
                         <p>Web: http://www.vilagong.ro/</p>
-                        <p class="small"><span class="semibold">SC Rentaporta Import Export SRL</span><br />VAT: J12/2665/1993<br />Fiscal code: 4341094</p>
+                        <p class="small"><span class="semibold">SC Rentaporta Import Export SRL</span><br />Registered in Romania No. J12/2665/1993<br />VAT number: RO4341094</p>
                         <p class="spacer20">&nbsp;</p>
                     </div>
                 </div>
