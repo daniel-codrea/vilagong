@@ -64,6 +64,8 @@ body {
 .navbar-default {
   background-color: transparent;
   border-color: transparent;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.35) 0%,rgba(0,0,0,0) 100%);
+  border-width: 0;
   .navbar-brand {
     color: #88211a;
     text-shadow: 0 1px 1px rgba(255,255,255,0.5);
@@ -112,6 +114,7 @@ h2, h4 {
       line-height: 50px;
       width: 58%;
       color: #88211a;
+      font-weight: 400;
     }
     strong {
       float: right;
@@ -132,6 +135,13 @@ h2, h4 {
   .carousel-inner {
     height: 100%;
     width: 100%;
+    .item {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
   }
   .carousel-control.left,
   .carousel-control.right {
