@@ -1,7 +1,15 @@
 $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// Navbar collapse
+//** Point at which the navbar becomes uncollapsed.
+$grid-float-breakpoint:     1200px;
+//** Point at which the navbar begins collapsing.
+$grid-float-breakpoint-max: 1199px;
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
+
+
+@import "fonts";
 
 .browsehappy {
   margin: 0.2em 0;
@@ -29,6 +37,73 @@ body {
   font-size: 16px;
   line-height: 1.6;
 }
+
+/* Bootstrap overrides */
+.navbar {
+  height: 50px;
+  margin-bottom: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.navbar-brand {
+  font-family: 'Damion', cursive;
+  height: 50px;
+  font-size: 26px;
+  line-height: 30px;
+  padding: 10px 0 10px 20px;
+}
+.navbar-default {
+  background-color: transparent;
+  border-color: transparent;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.35) 0%,rgba(0,0,0,0) 100%);
+  border-width: 0;
+  .navbar-brand {
+    color: #88211a;
+    text-shadow: 0 1px 1px rgba(255,255,255,0.5);
+    &:hover, &:focus {
+      color: #6E1B15;
+      text-shadow: 0 1px 1px rgba(0,0,0,0.3);
+    }
+  }
+  .navbar-nav > li > a {
+    line-height: 30px;
+    color: #fff;
+    font-size: 18px;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.8);
+    padding: 4px 20px;
+    &:hover, &:focus {
+      color: #88211a;
+    }
+  }
+  .navbar-toggle {
+    border-color: #88211a;
+    .icon-bar {
+      background-color: #88211a;
+    }
+    &:hover, &:focus {
+      background-color: #88211a;
+      .icon-bar {
+        background-color: #fff;
+      }
+    }
+  }
+  .navbar-collapse {
+    border-color: transparent;
+    border-width: 0;
+    max-height: 380px;
+    background: rgba(0,0,0,0.85);
+  }
+  .navbar-right {
+    li {
+      display: inline-block;
+      &:first-child {
+        width: 100%;
+      }
+    }
+  }
+}
+
 .bold {
   font-weight: 700;
 }
@@ -47,38 +122,17 @@ body {
   padding: 0; 
   border: 0;
 }
-
-.navbar {
-  height: 80px;
-  margin-bottom: 0;
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-.navbar-brand {
-  font-family: 'Damion', cursive;
-  height: 80px;
-  font-size: 46px;
-  line-height: 50px;
-}
-.navbar-default {
-  background-color: transparent;
+.btn-custom {
+  background-color: #003B18;
   border-color: transparent;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.35) 0%,rgba(0,0,0,0) 100%);
   border-width: 0;
-  .navbar-brand {
-    color: #88211a;
-    text-shadow: 0 1px 1px rgba(255,255,255,0.5);
-    &:hover, &:focus {
-      color: #6E1B15;
-      text-shadow: 0 1px 1px rgba(0,0,0,0.3);
-    }
-  }
-  .navbar-nav > li > a {
-    line-height: 50px;
-    color: #fff;
-    font-size: 24px;
-    text-shadow: 0 1px 1px rgba(0,0,0,0.8);
+  line-height: 30px !important;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  max-width: 220px;
+  &:hover, &:focus {
+    background-color: #003B18 !important;
+    color: #1A8847 !important;
   }
 }
 
@@ -88,7 +142,11 @@ h2, h4 {
   text-align: center;
   padding: 10px 0;
 }
+.m0 {
+  margin: 0;
+}
 
+/* Home section */
 #home {
   height: 100%;
   .overlay {
@@ -102,28 +160,26 @@ h2, h4 {
   }
   .carousel-caption {
     z-index: 30;
-    font-size: 40px;
-    background: rgba(255,255,255,0.5);
-    font-weight: 300;
+    font-size: 20px;
+    background: rgba(0,0,0,0.85);
     bottom: 10%;
     border-radius: 1px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5) inset;
+    box-shadow: 0 0 10px rgba(0,0,0,0.65) inset;
+    padding: 20px 10px;
     span {
-      float: left;
-      text-align: right;
-      line-height: 50px;
-      width: 58%;
+      text-align: center;
+      line-height: 30px;
+      display: block;
       color: #88211a;
       font-weight: 400;
+      margin-bottom: 10px;
     }
     strong {
-      float: right;
-      font-size: 66px;
-      line-height: 100px;
+      font-size: 33px;
+      line-height: 50px;
       text-align: left;
-      width: 40%;
-      border-left: 1px solid #fff;
-      padding-left: 10px;
+      border-top: 1px solid #fff;
+      font-weight: 300;
     }
   }
   #homepage-carousel {
@@ -150,7 +206,7 @@ h2, h4 {
   }
 }
 
-
+/* Facilitati section */
 #facilitati {
   min-height: 100%;
   color: #fff;
@@ -162,14 +218,98 @@ h2, h4 {
     padding: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.25);
   }
+  .indent {
+    text-indent: 60px;
+    display: inline-block;
+  }
+  .dotari {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li {
+      margin: 0;
+      padding: 0;
+      line-height: 22px;
+      span {
+        display: inline-block;
+        margin-right: 10px;
+        width: 20px;
+        height: 20px;
+        color: #fff;
+        text-shadow: 0 1px 1px rgba(0,0,0,0.8);
+      }
+    }
+  }
+  .dotari-inline {
+    li {
+      float: left;
+      text-align: center;
+      width: 33.33333%;
+      span {
+        display: block;
+        width: 100%;
+        height: 90px;
+        line-height: 90px;
+        font-size: 80px;
+      }
+    }
+  }
 }
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
-  
 }
 @media screen and (min-width: 1200px) {
-  .container {
-    max-width: 940px;
+  /* Bootstrap overrides */
+  .navbar {
+    height: 80px;
   }
+  .navbar-brand {
+    height: 80px;
+    font-size: 46px;
+    line-height: 50px;
+    padding: 15px 20px;
+    border-right: 1px solid #88211a;
+  }
+  .navbar-default {
+    .navbar-nav > li > a {
+      line-height: 50px;
+      font-size: 24px;
+      padding: 15px 20px;
+    }
+    .navbar-collapse {
+      background: transparent;
+    }
+    .navbar-right {
+      li:first-child {
+          width: auto;
+      }
+    }
+  }
+
+  /* Home section */
+  #home {
+    .carousel-caption {
+      font-size: 40px;
+      padding: 20px 10px;
+      span {
+        float: left;
+        text-align: right;
+        line-height: 50px;
+        width: 58%;
+        margin-bottom: 0;
+      }
+      strong {
+        float: right;
+        font-size: 66px;
+        line-height: 100px;
+        border-top: 0;
+        border-left: 1px solid #fff;
+        font-weight: 400;
+        width: 40%;
+        padding-left: 10px;
+      }
+    }
+  }
+
 }

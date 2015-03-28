@@ -2,7 +2,7 @@
 
 $('#homepage-carousel').carousel({
     pause: false,
-    interval: 4000
+    interval: 4000000
 });
 
 $('#homepage-carousel .carousel-inner div.item img').each(function() {
@@ -31,4 +31,8 @@ $(function() {
             }
         }
     });
+});
+
+$('.nav a').on('click', function(){
+    $('.navbar-toggle').click();
 });
