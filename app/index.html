@@ -1,23 +1,25 @@
 <!doctype html>
-<html class="no-js">
+<html class="no-js" lang="">
   <head>
     <meta charset="utf-8">
     <title>vilagong</title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
     <!-- endbower -->
     <!-- endbuild -->
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,700italic|Damion' rel='stylesheet' type='text/css'>
     <link href="http://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/3.2.2/ekko-lightbox.min.css" rel="stylesheet">
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
     <!-- build:js scripts/vendor/modernizr.js -->
-    <script src="bower_components/modernizr/modernizr.js"></script>
+    <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
 
   </head>
@@ -25,6 +27,7 @@
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
+
 
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid">
@@ -48,9 +51,9 @@
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#" class="btn btn-custom">Rezervari online</a></li>
-            <li><a href="#">RO</a></li>
-            <li><a href="#">EN</a></li>
-            <li><a href="#">HU</a></li>
+            <li><a href="#"><span class="flag-icon flag-icon-ro"></span></a></li>
+            <li><a href="#"><span class="flag-icon flag-icon-us"></span></a></li>
+            <li><a href="#"><span class="flag-icon flag-icon-hu"></span></a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -429,13 +432,13 @@
         <h2>Oferte speciale</h2>
         <div class="row">
           <div class="col-xs-12 col-sm-6">
-            <h3>7% Early booking</h3>
-            <p class="text-center"><span class="icon-alarm"></span></p>
+            <h3 class="text-center">7% Early booking</h3>
+            <span class="icon-offers icon-alarm"></span>
             <p>Rezervați camera dorită cu cel puțin 14 zile înainte de începerea sejurului și beneficiați de un discount de 7% din tariful de cazare. Camerele astfel rezervate nu se pot modifica ulterior. După rezervare suma totală se va încasa ca și avans de pe cardul de credit. În caz de neprezentare suma încasată în avans nu se returnează.</p>
           </div>
           <div class="col-xs-12 col-sm-6">
-            <h3>10% Long Stay</h3>
-            <p class="text-center"><span class="icon-hourglass"></span></p>
+            <h3 class="text-center">10% Long Stay</h3>
+            <span class="icon-offers icon-hourglass"></span>
             <p>Rezervați camera dorită pentru cel puțin 2 zile și beneficiați de un discount de 10% din tariful de cazare. Camerele astfel rezervate nu se pot modifica ulterior. După rezervare suma totală se va încasa ca și avans de pe cardul de credit. În caz de neprezentare suma încasată în avans nu se returnează.</p>
           </div>
         </div>
@@ -444,8 +447,42 @@
     <section id="sightseeing">
       <div class="container">
         <h2>Atractii</h2>
-        <div class="row">
-          <div class="col-xs-12"></div>
+        <div class="row row-eq-height">
+          <div class="col-xs-12 col-sm-4">
+            <div class="details-container">
+              <img src="images/atractii/turda/1.jpg" alt="Turda, Cheile Turzii" class="img-responsive" />
+              <h4>Turda, Cheile Turzii, Salina Turda</h4>
+              <p>Turda, al doilea mare centru urban din județul Cluj se află în partea de nord a Depresiunii Turda-Câmpia Turzii, la contactul Câmpiei Transilvaniei cu Munții Trascăului și Podișul Măhăceni. În decursul istoriei un rol extrem de important în dezvoltarea localității l-au avut zăcămintele de sare din apropiere.</p>
+              <p>Orașul dipune de mai multe clădiri cu valoare...</p>
+              <p><a href="#">Mai multe</a></p>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <div class="details-container">
+              <img src="images/atractii/kalota/1.jpg" alt="Tara Calatei" class="img-responsive" />
+              <h4>Tara Calatei</h4>
+              <p>Kalotaszeg is one of the regions of Transylvania inhabited mainly by Hungarians and includes about forty villages and towns. Geographically lies west from Cluj among the Munții Gilăului, Munții Vlădeasa, Munții Meseșului, and the hilly Szamos-hátság. The area is now divided in four parts: “Felszeg”, “Alszeg”, “Nádas mente”, “Fenes-pataka mente”. Buffalo breeding is a speciality of the animal husbandry in the Kalotaszeg-region.</p>
+              <p><a href="#">Mai multe</a></p>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <div class="details-container">
+              <img src="images/atractii/cluj/1.jpg" alt="Clujul istoric" class="img-responsive" />
+              <h4>Clujul istoric</h4>
+              <p>Municipiul Cluj-Napoca este reşedinţa judeţului Cluj, centru industrial important, oraş universitar, capitala spirituală a Transilvaniei, un centru medical important. Câteva din cele mai importante monumentele şi obiectivele turistice din Cluj:</p>
+              <p>&bull; Biserica romano-catolică Sf. Mihail, construită în stil gotic...</p>
+              <p><a href="#">Mai multe</a></p>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <div class="details-container">
+              <img src="images/atractii/gr_botanica/1.jpg" alt="Gradina botanica" class="img-responsive" />
+              <h4>Gradina botanica, Cluj-Napoca</h4>
+              <p>Terenul donat de contele Mikó Imre Societăţii Muzeale din Ardeal, a ajuns grădină botanică încă la sfârşitul secolului XIX. La începutul secolului XX. grădina botanică se extinde sub conducerea lui Richter Aladár. După primul război mondial, din anul 1920 profesorul Alexandru Borza conduce lucrările de extinderea și dezvoltare ale grădinii botanice.</p>
+              <p>La ora actuală Grădina Botanică din Cluj este o instituţie...</p>
+              <p><a href="#">Mai multe</a></p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -457,36 +494,31 @@
         </div>
       </div>
     </section>
-    
 
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/alert.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/button.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/carousel.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/collapse.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/dropdown.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tab.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/transition.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/scrollspy.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/modal.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/popover.js"></script>
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
+
+
+    <!-- build:js(.) scripts/plugins.js -->
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
+    <!-- endbuild -->
+
     <script src="http://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/3.2.2/ekko-lightbox.min.js"></script>
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='//www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
-    </script>
     <script>
         $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
             event.preventDefault();
@@ -495,8 +527,18 @@
         });
       </script>
 
-        <!-- build:js({app,.tmp}) scripts/main.js -->
-        <script src="scripts/main.js"></script>
-        <!-- endbuild -->
-</body>
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+  </body>
 </html>

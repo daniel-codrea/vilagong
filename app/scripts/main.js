@@ -8,11 +8,11 @@ $('#homepage-carousel').carousel({
 $('#homepage-carousel .carousel-inner div.item img').each(function() {
   var imgSrc = $(this).attr('src');
   $(this).next('.image-container').css({
-    'position': 'absolute', 
-    'width': '100%', 
-    'height': '100%', 
-    'background': 'url('+imgSrc+') center center no-repeat', 
-    'background-size': 'cover', 
+    'position': 'absolute',
+    'width': '100%',
+    'height': '100%',
+    'background': 'url('+imgSrc+') center center no-repeat',
+    'background-size': 'cover',
     'z-index': '10'
   });
   $(this).remove();
@@ -64,5 +64,5 @@ $('.nav a').on('click', function(){
     }
     init();
   }
-  
+
   cbpAnimatedHeader();

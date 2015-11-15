@@ -2,7 +2,20 @@
   "name": "vilagong",
   "private": true,
   "dependencies": {
-    "bootstrap-sass-official": "~3.2.0",
-    "modernizr": "~2.8.2"
+    "bootstrap-sass": "~3.3.5",
+    "modernizr": "~2.8.3"
+  },
+  "overrides": {
+    "bootstrap-sass": {
+      "main": [
+        "assets/stylesheets/_bootstrap.scss",
+        "assets/fonts/bootstrap/*",
+        "assets/javascripts/bootstrap.js"
+      ]
+    }
+  },
+  "devDependencies": {
+    "chai": "~3.4.1",
+    "mocha": "~2.3.3"
   }
 }

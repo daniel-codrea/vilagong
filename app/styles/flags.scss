@@ -1,0 +1,40 @@
+@mixin flag-icon-background {
+  background-size: contain;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+.flag-icon {
+  @include flag-icon-background();
+  position: relative;
+  display: inline-block;
+  width: (4 / 3) * 1em;
+  line-height: 1em;
+  &:before {
+    content: '\00a0';
+  }
+  &.flag-icon-squared {
+    width: 1em;
+  }
+}
+
+.flag-icon {
+  &.flag-icon-ro{
+    background-image: url(../images/ro_4x3.svg);
+    &.flag-icon-squared {
+      background-image: url(../images/ro_1x1.svg);
+    }
+  }
+  &.flag-icon-hu{
+    background-image: url(../images/hu_4x3.svg);
+    &.flag-icon-squared {
+      background-image: url(../images/hu_1x1.svg);
+    }
+  }
+  &.flag-icon-us{
+    background-image: url(../images/us_4x3.svg);
+    &.flag-icon-squared {
+      background-image: url(../images/us_1x1.svg);
+    }
+  }
+}

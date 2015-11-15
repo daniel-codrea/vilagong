@@ -1,15 +1,17 @@
-$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+$icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+
 // Navbar collapse
 //** Point at which the navbar becomes uncollapsed.
 $grid-float-breakpoint:     1200px;
 //** Point at which the navbar begins collapsing.
 $grid-float-breakpoint-max: 1199px;
-// bower:scss
-@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
-// endbower
-
 
 @import "fonts";
+@import "flags";
 
 .browsehappy {
   margin: 0.2em 0;
@@ -31,8 +33,8 @@ body {
 }
 body {
   color: #333;
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
+  font-family: 'open_sansregular', sans-serif;
+  font-weight: normal;
   font-style: normal;
   font-size: 16px;
   line-height: 1.6;
@@ -47,7 +49,7 @@ body {
   width: 100%;
 }
 .navbar-brand {
-  font-family: 'Damion', cursive;
+  font-family: 'english111_vivace_btregular';
   height: 50px;
   font-size: 26px;
   line-height: 30px;
@@ -56,24 +58,29 @@ body {
 .navbar-default {
   background-color: transparent;
   border-color: transparent;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.35) 0%,rgba(0,0,0,0) 100%);
+  background: -moz-linear-gradient(top,  rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
+  background: -webkit-linear-gradient(top,  rgba(0,0,0,0.5) 0%,rgba(0,0,0,0) 100%);
+  background: linear-gradient(to bottom,  rgba(0,0,0,0.5) 0%,rgba(0,0,0,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80000000', endColorstr='#00000000',GradientType=0 );
   border-width: 0;
   .navbar-brand {
-    color: #D43429;
-    text-shadow: 0 1px 1px rgba(0,0,0,0.8);
+    color: #fff;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.25);
     &:hover, &:focus {
-      color: #D43429;
-      text-shadow: 0 1px 1px rgba(136,33,26,0.5);
+      color: #88211a;
+      text-shadow: 0 1px 1px rgba(0,0,0,0.45);
     }
   }
   .navbar-nav > li > a {
     line-height: 30px;
     color: #fff;
     font-size: 18px;
-    text-shadow: 0 1px 1px rgba(0,0,0,0.8);
+    text-shadow: 0 1px 1px rgba(0,0,0,0.45);
     padding: 4px 20px;
     &:hover, &:focus {
-      color: #D43429;
+      color: #000;
+      text-shadow: 0 1px 1px rgba(255,255,255,0.25);
+      font-family: 'open_sansbold';
     }
   }
   .navbar-toggle {
@@ -89,8 +96,7 @@ body {
     }
   }
   &.navbar-shrink {
-    /*background: linear-gradient(to bottom, rgba(0,0,0,0.7) 50%,rgba(0,0,0,0) 100%);*/
-    background: rgba(0,0,0,0.7);
+    background: url(../images/pattern-dark.png) repeat top left;
   }
   .navbar-collapse {
     border-color: transparent;
@@ -110,25 +116,21 @@ body {
 }
 
 .bold {
-  font-weight: 700;
-}
-.ultrabold {
-  font-weight: 900;
+  font-family: 'open_sansbold';
 }
 .bolditalic {
-  font-weight: 700;
-  font-style: italic;
+  font-family: 'open_sansbold_italic';
 }
 .spacer20 {
-  height: 20px; 
-  line-height: 1; 
-  font-size: 10px; 
-  margin: 0; 
-  padding: 0; 
+  height: 20px;
+  line-height: 1;
+  font-size: 10px;
+  margin: 0;
+  padding: 0;
   border: 0;
 }
 .btn-custom {
-  background-color: #003B18;
+  background-color: #88211a;
   border-color: transparent;
   border-width: 0;
   line-height: 30px !important;
@@ -136,13 +138,15 @@ body {
   margin-bottom: 10px;
   max-width: 220px;
   &:hover, &:focus {
-    background-color: #003B18 !important;
-    color: #1A8847 !important;
+    background-color: #fff !important;
+    color: #88211a !important;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.35) !important;
   }
 }
 
 h2, h4 {
-  font-weight: 300;
+  font-family: 'open_sanslight';
+  font-weight: normal;
   text-transform: uppercase;
   text-align: center;
   padding: 10px 0;
@@ -150,12 +154,30 @@ h2, h4 {
 .m0 {
   margin: 0;
 }
+/* Same height columns */
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  [class^="col-"] {
+    margin-bottom: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    > div {
+      -webkit-align-items: stretch;
+      align-items: stretch;
+    }
+  }
+}
 
 /* Home section */
 #home {
   height: 100%;
   .overlay {
-    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAG0lEQVQIW2NkQAOMUP5/BgYGMBsmAFeHLvAfACzpAgQx5BhmAAAAAElFTkSuQmCC) repeat;
+    background: url(../images/pattern.png) repeat top left;
     position: absolute;
     top: 0;
     left: 0;
@@ -166,17 +188,17 @@ h2, h4 {
   .carousel-caption {
     z-index: 30;
     font-size: 20px;
-    background: rgba(0,0,0,0.85);
-    bottom: 10%;
-    border-radius: 1px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.65) inset;
+    background: rgba(0,0,0,0.65) url(../images/pattern.png) repeat top left;
+    bottom: 0;
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.95) inset;
     padding: 20px 10px;
     span {
       text-align: center;
       line-height: 30px;
       display: block;
       color: #D43429;
-      font-weight: 400;
+      font-weight: normal;
       margin-bottom: 10px;
     }
     strong {
@@ -184,7 +206,7 @@ h2, h4 {
       line-height: 50px;
       text-align: left;
       border-top: 1px solid #fff;
-      font-weight: 300;
+      font-family: 'open_sanslight';
     }
   }
   #homepage-carousel {
@@ -260,11 +282,6 @@ h2, h4 {
     }
   }
 }
-.row-eq-height {
-  [class^="col-"] {
-    margin-bottom: 20px;
-  }
-}
 
 /* Gallery section */
 #gallery {
@@ -286,6 +303,12 @@ h2, h4 {
   background: url('../images/work_bg.png') #81a256 center center no-repeat;
   background-size: cover;
   padding: 100px 0 20px;
+  .icon-offers {
+    font-size: 48px;
+    padding: 30px 0;
+    display: block;
+    text-align: center;
+  }
 }
 
 /* Sightseeing section */
@@ -295,6 +318,11 @@ h2, h4 {
   background: url('../images/contact_bg.png') #75b4aa center center no-repeat;
   background-size: cover;
   padding: 100px 0 20px;
+  .details-container {
+    background: #75b4aa;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.25);
+  }
 }
 
 /* Contact section */
@@ -308,24 +336,6 @@ h2, h4 {
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
-  /* Same height columns */
-  .row-eq-height {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    [class^="col-"] {
-      margin-bottom: 0;
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      > div {
-        -webkit-align-items: stretch;
-        align-items: stretch;
-      }
-    }
-  }
   /* Home section */
   #home {
     .carousel-caption {
@@ -350,7 +360,7 @@ h2, h4 {
     font-size: 40px;
     line-height: 40px;
     padding: 15px 20px;
-    border-right: 1px solid #D43429;
+    border-right: 4px solid #88211a;
   }
   .navbar-default {
     .navbar-nav > li > a {
@@ -389,7 +399,7 @@ h2, h4 {
         line-height: 100px;
         border-top: 0;
         border-left: 1px solid #fff;
-        font-weight: 400;
+        font-weight: normal;
         width: 40%;
         padding-left: 10px;
       }
@@ -405,13 +415,14 @@ h2, h4 {
   }
   .navbar-brand {
     height: 80px;
-    font-size: 46px;
-    line-height: 50px;
+    font-size: 66px;
+    line-height: 80px;
+    padding: 0 30px;
   }
   .navbar-default {
     .navbar-nav > li > a {
       line-height: 50px;
-      font-size: 24px;
+      font-size: 16px;
       padding: 15px;
     }
     .btn-custom {
