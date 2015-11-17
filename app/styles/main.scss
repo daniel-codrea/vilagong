@@ -78,8 +78,7 @@ body {
     text-shadow: 0 1px 1px rgba(0,0,0,0.45);
     padding: 4px 20px;
     &:hover, &:focus {
-      color: #000;
-      text-shadow: 0 1px 1px rgba(255,255,255,0.25);
+      color: #D43429;
       font-family: 'open_sansbold';
     }
   }
@@ -96,7 +95,7 @@ body {
     }
   }
   &.navbar-shrink {
-    background: url(../images/pattern-dark.png) repeat top left;
+    background: rgba(0,0,0,0.5) url(../images/pattern-dark.png) repeat top left;
   }
   .navbar-collapse {
     border-color: transparent;
