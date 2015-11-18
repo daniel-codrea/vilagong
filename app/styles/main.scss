@@ -58,10 +58,7 @@ body {
 .navbar-default {
   background-color: transparent;
   border-color: transparent;
-  background: -moz-linear-gradient(top,  rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
-  background: -webkit-linear-gradient(top,  rgba(0,0,0,0.5) 0%,rgba(0,0,0,0) 100%);
-  background: linear-gradient(to bottom,  rgba(0,0,0,0.5) 0%,rgba(0,0,0,0) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80000000', endColorstr='#00000000',GradientType=0 );
+  background: transparent;
   border-width: 0;
   .navbar-brand {
     color: #fff;
@@ -79,7 +76,6 @@ body {
     padding: 4px 20px;
     &:hover, &:focus {
       color: #D43429;
-      font-family: 'open_sansbold';
     }
   }
   .navbar-toggle {
@@ -95,7 +91,7 @@ body {
     }
   }
   &.navbar-shrink {
-    background: rgba(0,0,0,0.5) url(../images/pattern-dark.png) repeat top left;
+    background: rgba(0,0,0,0.75) url(../images/pattern-dark.png) repeat top left;
   }
   .navbar-collapse {
     border-color: transparent;
@@ -171,6 +167,13 @@ h2, h4 {
     }
   }
 }
+/* No padding columns */
+.row-no-padding {
+  [class^="col-"] {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
 
 /* Home section */
 #home {
@@ -189,9 +192,10 @@ h2, h4 {
     font-size: 20px;
     background: rgba(0,0,0,0.65) url(../images/pattern.png) repeat top left;
     bottom: 0;
-    border-radius: 2px;
+    border-radius: 0;
     box-shadow: 0 0 10px rgba(0,0,0,0.95) inset;
     padding: 20px 10px;
+    width: 100%;
     span {
       text-align: center;
       line-height: 30px;
@@ -235,14 +239,11 @@ h2, h4 {
 /* Facilities section */
 #facilities {
   min-height: 100%;
-  color: #fff;
-  background: url('../images/services_bg.png') #b64c52 center center no-repeat;
-  background-size: cover;
+  color: #444;
+  background: #fff;
   padding: 100px 0 20px;
   .details-container {
-    background: #c45158;
-    padding: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.25);
+    padding: 0;
   }
   .indent {
     text-indent: 60px;
@@ -250,7 +251,7 @@ h2, h4 {
   }
   .dotari {
     margin: 0;
-    padding: 0;
+    padding: 0 20px;
     list-style: none;
     li {
       margin: 0;
@@ -261,12 +262,13 @@ h2, h4 {
         margin-right: 10px;
         width: 20px;
         height: 20px;
-        color: #fff;
-        text-shadow: 0 1px 1px rgba(0,0,0,0.8);
+        color: #333;
+        text-shadow: 0 1px 1px rgba(0,0,0,0.2);
       }
     }
   }
   .dotari-inline {
+    padding: 0 20px;
     li {
       float: left;
       text-align: center;
@@ -338,6 +340,8 @@ h2, h4 {
   /* Home section */
   #home {
     .carousel-caption {
+      left: 0;
+      right: 0;
       font-size: 32px;
       span {
         line-height: 40px;
@@ -356,10 +360,10 @@ h2, h4 {
   }
   .navbar-brand {
     height: 70px;
-    font-size: 40px;
+    font-size: 30px;
     line-height: 40px;
     padding: 15px 20px;
-    border-right: 4px solid #88211a;
+    border-right: 1px solid rgba(255,255,255,0.7);
   }
   .navbar-default {
     .navbar-nav > li > a {
@@ -389,7 +393,7 @@ h2, h4 {
         float: left;
         text-align: right;
         line-height: 50px;
-        width: 58%;
+        width: 50%;
         margin-bottom: 0;
       }
       strong {
@@ -399,7 +403,7 @@ h2, h4 {
         border-top: 0;
         border-left: 1px solid #fff;
         font-weight: normal;
-        width: 40%;
+        width: 49%;
         padding-left: 10px;
       }
     }
@@ -414,15 +418,15 @@ h2, h4 {
   }
   .navbar-brand {
     height: 80px;
-    font-size: 66px;
+    font-size: 40px;
     line-height: 80px;
     padding: 0 30px;
   }
   .navbar-default {
     .navbar-nav > li > a {
-      line-height: 50px;
-      font-size: 16px;
-      padding: 15px;
+      line-height: 80px;
+      font-size: 14px;
+      padding: 0px 25px;
     }
     .btn-custom {
       padding: 15px 20px !important;
@@ -440,9 +444,5 @@ h2, h4 {
 }
 
 @media screen and (min-width: 1600px) {
-  .navbar-default {
-    .navbar-nav > li > a {
-      padding: 15px 20px;
-    }
-  }
+
 }
