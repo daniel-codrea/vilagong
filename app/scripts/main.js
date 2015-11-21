@@ -33,36 +33,31 @@ $(function() {
     });
 });
 
-$('.nav a').on('click', function(){
-    $('.navbar-toggle').click();
-});
-
- function cbpAnimatedHeader() {
+var cbpAnimatedHeader = (function() {
     var docElem = document.documentElement,
-      didScroll = false,
-      changeHeaderOn = 300;
+        header = document.querySelector( '.navbar-default' ),
+        didScroll = false,
+        changeHeaderOn = 300;
     function init() {
-      window.addEventListener( 'scroll', function( ) {
-        if( !didScroll ) {
-          didScroll = true;
-          setTimeout( scrollPage, 250 );
-        }
-      }, false );
+        window.addEventListener( 'scroll', function( event ) {
+            if( !didScroll ) {
+                didScroll = true;
+                setTimeout( scrollPage, 250 );
+            }
+        }, false );
     }
     function scrollPage() {
-      var sy = scrollY();
-      if ( sy >= changeHeaderOn ) {
-        $( '.navbar-default' ).addClass('navbar-shrink' );
-      }
-      else {
-        $( '.navbar-default' ).removeClass('navbar-shrink' );
-      }
-      didScroll = false;
+        var sy = scrollY();
+        if ( sy >= changeHeaderOn ) {
+            $('.navbar').addClass('navbar-shrink' );
+        }
+        else {
+            $('.navbar').removeClass('navbar-shrink' );
+        }
+        didScroll = false;
     }
     function scrollY() {
-      return window.pageYOffset || docElem.scrollTop;
+        return window.pageYOffset || docElem.scrollTop;
     }
     init();
-  }
-
-  cbpAnimatedHeader();
+})();

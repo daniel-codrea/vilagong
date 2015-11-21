@@ -10,6 +10,8 @@ $grid-float-breakpoint:     1200px;
 //** Point at which the navbar begins collapsing.
 $grid-float-breakpoint-max: 1199px;
 
+@import "variables";
+@import "extensions";
 @import "fonts";
 @import "flags";
 
@@ -19,7 +21,6 @@ $grid-float-breakpoint-max: 1199px;
   color: #000;
   padding: 0.2em 0;
 }
-
 html,
 body {
   height: 100%;
@@ -41,30 +42,26 @@ body {
 }
 
 /* Bootstrap overrides */
-.navbar {
+.navbar-default {
   height: 50px;
   margin-bottom: 0;
   position: fixed;
   top: 0;
   width: 100%;
-}
-.navbar-brand {
-  font-family: 'english111_vivace_btregular';
-  height: 50px;
-  font-size: 26px;
-  line-height: 30px;
-  padding: 10px 0 10px 20px;
-}
-.navbar-default {
   background-color: transparent;
   border-color: transparent;
   background: transparent;
   border-width: 0;
   .navbar-brand {
+    font-family: 'english111_vivace_btregular';
+    height: 50px;
+    font-size: 26px;
+    line-height: 30px;
+    padding: 10px 0 10px 20px;
     color: #fff;
     text-shadow: 0 1px 1px rgba(0,0,0,0.25);
     &:hover, &:focus {
-      color: #88211a;
+      color: $color-red;
       text-shadow: 0 1px 1px rgba(0,0,0,0.45);
     }
   }
@@ -79,12 +76,12 @@ body {
     }
   }
   .navbar-toggle {
-    border-color: #88211a;
+    border-color: $color-red;
     .icon-bar {
-      background-color: #88211a;
+      background-color: $color-red;
     }
     &:hover, &:focus {
-      background-color: #88211a;
+      background-color: $color-red;
       .icon-bar {
         background-color: #fff;
       }
@@ -97,16 +94,7 @@ body {
     border-color: transparent;
     border-width: 0;
     max-height: 380px;
-    background: rgba(0,0,0,0.85);
-    overflow-x: hidden !important;
-  }
-  .navbar-right {
-    li {
-      display: inline-block;
-      &:first-child {
-        width: 100%;
-      }
-    }
+    overflow-x: hidden;
   }
 }
 
@@ -124,18 +112,18 @@ body {
   padding: 0;
   border: 0;
 }
-.btn-custom {
-  background-color: #88211a;
+.btn-custom, a.btn-custom {
+  background-color: $color-red;
   border-color: transparent;
   border-width: 0;
   line-height: 30px !important;
   margin-top: 10px;
   margin-bottom: 10px;
-  max-width: 220px;
+  display: inline-block;
   &:hover, &:focus {
     background-color: #fff !important;
-    color: #88211a !important;
-    text-shadow: 0 1px 1px rgba(0,0,0,0.35) !important;
+    color: $color-red !important;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.15) !important;
   }
 }
 
@@ -146,8 +134,26 @@ h2, h4 {
   text-align: center;
   padding: 10px 0;
 }
-.m0 {
+
+a {
+  color: $color-red;
+  &:hover,
+  &:focus {
+    color: $color-red-hover;
+  }
+}
+.m-a-0 {
   margin: 0;
+}
+.p-a-20 {
+  padding: 20px;
+}
+.p-x-20 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.white-background {
+  background: #fff;
 }
 /* Same height columns */
 .row-eq-height {
@@ -174,6 +180,16 @@ h2, h4 {
     padding-right: 0px;
   }
 }
+.row-no-margin {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus{
+  background-color: $color-red;
+  color: #fff;
+}
+
 
 /* Home section */
 #home {
@@ -241,7 +257,10 @@ h2, h4 {
   min-height: 100%;
   color: #444;
   background: #fff;
-  padding: 100px 0 20px;
+  padding: 70px 0 20px;
+  .nav.nav-pills {
+    padding: 10px 0 25px;
+  }
   .details-container {
     padding: 0;
   }
@@ -287,14 +306,9 @@ h2, h4 {
 /* Gallery section */
 #gallery {
   min-height: 100%;
-  color: #fff;
-  background: url('../images/about_bg.png') #665464 center center no-repeat;
-  background-size: cover;
-  padding: 100px 0 20px;
-  img {
-    margin-bottom: 20px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.5);
-  }
+  color: #444;
+  padding: 70px 0 20px;
+  background: red;
 }
 
 /* Offers section */
@@ -354,35 +368,6 @@ h2, h4 {
   }
 }
 @media screen and (min-width: 1200px) {
-  /* Bootstrap overrides */
-  .navbar {
-    height: 70px;
-  }
-  .navbar-brand {
-    height: 70px;
-    font-size: 30px;
-    line-height: 40px;
-    padding: 15px 20px;
-    border-right: 1px solid rgba(255,255,255,0.7);
-  }
-  .navbar-default {
-    .navbar-nav > li > a {
-      line-height: 40px;
-      font-size: 20px;
-      padding: 15px 12px;
-    }
-    .navbar-collapse {
-      background: transparent;
-    }
-    .navbar-right {
-      li:first-child {
-          width: auto;
-      }
-    }
-    .btn-custom {
-      padding: 10px 15px !important;
-    }
-  }
 
   /* Home section */
   #home {
@@ -413,24 +398,38 @@ h2, h4 {
 
 @media screen and (min-width: 1400px) {
   /* Bootstrap overrides */
-  .navbar {
-    height: 80px;
-  }
-  .navbar-brand {
-    height: 80px;
-    font-size: 40px;
-    line-height: 80px;
-    padding: 0 30px;
-  }
   .navbar-default {
+    height: 80px;
+    .navbar-brand {
+      height: 80px;
+      font-size: 40px;
+      line-height: 80px;
+      padding: 0 30px;
+    }
     .navbar-nav > li > a {
       line-height: 80px;
       font-size: 14px;
       padding: 0px 25px;
     }
-    .btn-custom {
-      padding: 15px 20px !important;
+    &.navbar-shrink {
+      height: 50px;
+      .navbar-brand {
+        height: 50px;
+        line-height: 50px;
+        font-size: 24px;
+      }
+      .navbar-nav > li > a {
+        line-height: 50px;
+      }
+      .btn-custom, a.btn-custom {
+        padding: 5px 15px;
+        margin: 5px 0;
+      }
     }
+  }
+
+  .btn-custom, a.btn-custom {
+    padding: 15px 20px;
   }
   /* Home section */
   #home {
