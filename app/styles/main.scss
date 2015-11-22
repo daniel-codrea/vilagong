@@ -145,6 +145,10 @@ a {
 .m-a-0 {
   margin: 0;
 }
+.m-x-20 {
+  margin-left: 20px;
+  margin-right: 20px;
+}
 .p-a-20 {
   padding: 20px;
 }
@@ -152,8 +156,8 @@ a {
   padding-left: 20px;
   padding-right: 20px;
 }
-.white-background {
-  background: #fff;
+.white-background-80 {
+  background: rgba(255, 255, 255, 0.8);
 }
 /* Same height columns */
 .row-eq-height {
@@ -308,7 +312,8 @@ a {
   min-height: 100%;
   color: #444;
   padding: 70px 0 20px;
-  background: red;
+  background: url(../images/gallery.jpg) no-repeat center center;
+  background-size: cover;
 }
 
 /* Offers section */
