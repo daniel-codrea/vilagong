@@ -80,3 +80,8 @@ $('.custom-tab-nav').on('click', function(){
 var date = new Date();
 var currentYear = date.getFullYear();
 $('#currentYear').html(currentYear);
+
+$('.sightseeing-text').enscroll({
+    addPaddingToPane: false,
+    propagateWheelEvent: false
+});
