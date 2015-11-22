@@ -61,3 +61,22 @@ var cbpAnimatedHeader = (function() {
     }
     init();
 })();
+
+
+$('.navbar-nav li a').click(function(event) {
+    $('.navbar-collapse').collapse('hide');
+});
+$('#mainNavigation').on('shown.bs.collapse', function(){
+    $('#mainNavigation').addClass('navbar-mobile');
+});
+$('#mainNavigation').on('hidden.bs.collapse', function(){
+    $('#mainNavigation').removeClass('navbar-mobile');
+});
+$('.custom-tab-nav').on('click', function(){
+    var target = $(this).data('target');
+    $('.nav-pills a[href="#' + target + '"]').tab('show');
+});
+
+var date = new Date();
+var currentYear = date.getFullYear();
+$('#currentYear').html(currentYear);

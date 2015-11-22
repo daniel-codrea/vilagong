@@ -29,7 +29,7 @@
     <![endif]-->
 
 
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav id="mainNavigation" class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -51,9 +51,9 @@
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#" class="btn btn-custom">Rezervari online</a></li>
-            <li><a href="#"><span class="flag-icon flag-icon-ro"></span></a></li>
-            <li><a href="#"><span class="flag-icon flag-icon-us"></span></a></li>
-            <li><a href="#"><span class="flag-icon flag-icon-hu"></span></a></li>
+            <li class="language-flag"><a href="#"><span class="flag-icon flag-icon-ro"></span></a></li>
+            <li class="language-flag"><a href="#"><span class="flag-icon flag-icon-us"></span></a></li>
+            <li class="language-flag"><a href="#"><span class="flag-icon flag-icon-hu"></span></a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -129,18 +129,20 @@
         <div class="row row-no-padding">
           <div>
             <ul class="nav nav-pills" role="tablist">
-              <li role="presentation" class="active"><a href="#tab1" aria-controls="tab1" role="tab" data-toggle="pill">Camere Standard</a></li>
-              <li role="presentation"><a href="#tab2" aria-controls="tab2" role="tab" data-toggle="pill">Camera Superior</a></li>
-              <li role="presentation"><a href="#tab3" aria-controls="tab3" role="tab" data-toggle="pill">Camere triple</a></li>
-              <li role="presentation"><a href="#tab4" aria-controls="tab4" role="tab" data-toggle="pill">Restaurant</a></li>
-              <li role="presentation"><a href="#tab5" aria-controls="tab5" role="tab" data-toggle="pill">Sala de conferinte</a></li>
+              <li role="presentation" class="active"><a href="#tab1" aria-controls="tab1" role="tab" data-toggle="pill" class="custom-tab-pill">Camere Standard</a></li>
+              <li role="presentation"><a href="#tab2" aria-controls="tab2" role="tab" data-toggle="pill" class="custom-tab-pill">Camera Superior</a></li>
+              <li role="presentation"><a href="#tab3" aria-controls="tab3" role="tab" data-toggle="pill" class="custom-tab-pill">Camere triple</a></li>
+              <li role="presentation"><a href="#tab4" aria-controls="tab4" role="tab" data-toggle="pill" class="custom-tab-pill">Restaurant</a></li>
+              <li role="presentation"><a href="#tab5" aria-controls="tab5" role="tab" data-toggle="pill" class="custom-tab-pill">Sala de conferinte</a></li>
             </ul>
             <div class="tab-content">
               <div role="tabpanel" class="tab-pane fade in active" id="tab1">
-                <div class="col-xs-6">
+                <span class="glyphicon glyphicon-menu-left custom-tab-nav" aria-hidden="true" data-target="tab5"></span>
+                <span class="glyphicon glyphicon-menu-right custom-tab-nav" aria-hidden="true" data-target="tab2"></span>
+                <div class="col-xs-12 col-sm-6">
                   <img src="images/camera_standard.jpg" alt="camera standard" class="img-responsive" />
                 </div>
-                <div class="col-xs-6">
+                <div class="col-xs-12 col-sm-6">
                   <div class="p-x-20">
                     <h4>Camere Standard</h4>
                       <p>Camerele standard au doua paturi separate si sunt destinate cazarii a una sau doua persoane.</p>
@@ -161,10 +163,12 @@
                 </div>
               </div>
               <div role="tabpanel" class="tab-pane fade" id="tab2">
-                <div class="col-xs-6">
+                <span class="glyphicon glyphicon-menu-left custom-tab-nav" aria-hidden="true" data-target="tab1"></span>
+                <span class="glyphicon glyphicon-menu-right custom-tab-nav" aria-hidden="true" data-target="tab3"></span>
+                <div class="col-xs-12 col-sm-6">
                   <img src="images/camera_superior.jpg" alt="camera superior" class="img-responsive" />
                 </div>
-                <div class="col-xs-6">
+                <div class="col-xs-12 col-sm-6">
                   <div class="p-x-20">
                     <h4>Camera Superior</h4>
                     <p>Camerele superior au un pat matrimonial sau doua paturi separate si sunt destinate cazarii a una sau doua persoane.</p>
@@ -186,10 +190,12 @@
                 </div>
               </div>
               <div role="tabpanel" class="tab-pane fade" id="tab3">
-                <div class="col-xs-6">
+                <span class="glyphicon glyphicon-menu-left custom-tab-nav" aria-hidden="true" data-target="tab2"></span>
+                <span class="glyphicon glyphicon-menu-right custom-tab-nav" aria-hidden="true" data-target="tab4"></span>
+                <div class="col-xs-12 col-sm-6">
                   <img src="images/camera_tripla.jpg" alt="camera tripla" class="img-responsive" />
                 </div>
-                <div class="col-xs-6">
+                <div class="col-xs-12 col-sm-6">
                   <div class="p-x-20">
                     <h4>Camere triple</h4>
                     <p>Camera are trei paturi separate si este destinata cazarii a trei persoane. Recomandam in primul rand familiilor cu copii.</p>
@@ -210,10 +216,12 @@
                 </div>
               </div>
               <div role="tabpanel" class="tab-pane fade" id="tab4">
+                <span class="glyphicon glyphicon-menu-left custom-tab-nav" aria-hidden="true" data-target="tab3"></span>
+                <span class="glyphicon glyphicon-menu-right custom-tab-nav" aria-hidden="true" data-target="tab5"></span>
                 <div class="col-xs-12 col-sm-6">
                   <img src="images/restaurant.jpg" alt="restaurant" class="img-responsive" />
                 </div>
-                <div class="col-xs-6">
+                <div class="col-xs-12 col-sm-6">
                   <div class="p-x-20">
                     <h4>Restaurant</h4>
                     <p>In restaurantul Gong, intr-o atmosfera familiara puteti servi micul dejun sau meniuri a la carte.</p>
@@ -225,10 +233,12 @@
                 </div>
               </div>
               <div role="tabpanel" class="tab-pane fade" id="tab5">
+                <span class="glyphicon glyphicon-menu-left custom-tab-nav" aria-hidden="true" data-target="tab4"></span>
+                <span class="glyphicon glyphicon-menu-right custom-tab-nav" aria-hidden="true" data-target="tab1"></span>
                 <div class="col-xs-12 col-sm-6">
                   <img src="images/conference.jpg" alt="sala conferinta" class="img-responsive" />
                 </div>
-                <div class="col-xs-6">
+                <div class="col-xs-12 col-sm-6">
                   <div class="p-x-20">
                     <h4>Sala de conferinte</h4>
                     <p>Vila Gong va pune la dispozitie o sala de conferinte ideala pentru organizarea unor cursuri, sedinte, team-buildinguri.</p>
@@ -458,13 +468,13 @@
         <h2>Oferte speciale</h2>
         <div class="row">
           <div class="col-xs-12 col-sm-6">
-            <h3 class="text-center">7% Early booking</h3>
-            <span class="icon-offers icon-alarm"></span>
+            <h4 class="text-center">7% Early booking</h4>
+            <span class="icon-offers icon-alarm hidden-xs"></span>
             <p>Rezervați camera dorită cu cel puțin 14 zile înainte de începerea sejurului și beneficiați de un discount de 7% din tariful de cazare. Camerele astfel rezervate nu se pot modifica ulterior. După rezervare suma totală se va încasa ca și avans de pe cardul de credit. În caz de neprezentare suma încasată în avans nu se returnează.</p>
           </div>
           <div class="col-xs-12 col-sm-6">
-            <h3 class="text-center">10% Long Stay</h3>
-            <span class="icon-offers icon-hourglass"></span>
+            <h4 class="text-center">10% Long Stay</h4>
+            <span class="icon-offers icon-hourglass hidden-xs"></span>
             <p>Rezervați camera dorită pentru cel puțin 2 zile și beneficiați de un discount de 10% din tariful de cazare. Camerele astfel rezervate nu se pot modifica ulterior. După rezervare suma totală se va încasa ca și avans de pe cardul de credit. În caz de neprezentare suma încasată în avans nu se returnează.</p>
           </div>
         </div>
@@ -473,43 +483,66 @@
     <section id="sightseeing">
       <div class="container">
         <h2>Atractii</h2>
-        <div class="row row-eq-height">
-          <div class="col-xs-12 col-sm-6">
-            <div class="details-container">
-              <img src="images/atractii/turda/1.jpg" alt="Turda, Cheile Turzii" class="img-responsive" />
-              <h4>Turda, Cheile Turzii, Salina Turda</h4>
-              <p>Turda, al doilea mare centru urban din județul Cluj se află în partea de nord a Depresiunii Turda-Câmpia Turzii, la contactul Câmpiei Transilvaniei cu Munții Trascăului și Podișul Măhăceni. În decursul istoriei un rol extrem de important în dezvoltarea localității l-au avut zăcămintele de sare din apropiere.</p>
-              <p>Orașul dipune de mai multe clădiri cu valoare...</p>
-              <p><a href="#">Mai multe</a></p>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-6">
-            <div class="details-container">
-              <img src="images/atractii/kalota/1.jpg" alt="Tara Calatei" class="img-responsive" />
-              <h4>Tara Calatei</h4>
-              <p>Kalotaszeg is one of the regions of Transylvania inhabited mainly by Hungarians and includes about forty villages and towns. Geographically lies west from Cluj among the Munții Gilăului, Munții Vlădeasa, Munții Meseșului, and the hilly Szamos-hátság. The area is now divided in four parts: “Felszeg”, “Alszeg”, “Nádas mente”, “Fenes-pataka mente”. Buffalo breeding is a speciality of the animal husbandry in the Kalotaszeg-region.</p>
-              <p><a href="#">Mai multe</a></p>
-            </div>
-          </div>
-        </div>
-        <p class="spacer20 hidden-xs">&nbsp;</p>
-        <div class="row row-eq-height">
-          <div class="col-xs-12 col-sm-6">
-            <div class="details-container">
-              <img src="images/atractii/cluj/1.jpg" alt="Clujul istoric" class="img-responsive" />
-              <h4>Clujul istoric</h4>
-              <p>Municipiul Cluj-Napoca este reşedinţa judeţului Cluj, centru industrial important, oraş universitar, capitala spirituală a Transilvaniei, un centru medical important. Câteva din cele mai importante monumentele şi obiectivele turistice din Cluj:</p>
-              <p>&bull; Biserica romano-catolică Sf. Mihail, construită în stil gotic...</p>
-              <p><a href="#">Mai multe</a></p>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-6">
-            <div class="details-container">
-              <img src="images/atractii/gr_botanica/1.jpg" alt="Gradina botanica" class="img-responsive" />
-              <h4>Gradina botanica, Cluj-Napoca</h4>
-              <p>Terenul donat de contele Mikó Imre Societăţii Muzeale din Ardeal, a ajuns grădină botanică încă la sfârşitul secolului XIX. La începutul secolului XX. grădina botanică se extinde sub conducerea lui Richter Aladár. După primul război mondial, din anul 1920 profesorul Alexandru Borza conduce lucrările de extinderea și dezvoltare ale grădinii botanice.</p>
-              <p>La ora actuală Grădina Botanică din Cluj este o instituţie...</p>
-              <p><a href="#">Mai multe</a></p>
+        <div class="row row-no-padding">
+          <div>
+            <ul class="nav nav-pills" role="tablist">
+              <li role="presentation" class="active"><a href="#tab-sight1" aria-controls="tab-sight1" role="tab" data-toggle="pill" class="custom-tab-pill white">Turda, Cheile Turzii, Salina Turda</a></li>
+              <li role="presentation"><a href="#tab-sight2" aria-controls="tab-sight2" role="tab" data-toggle="pill" class="custom-tab-pill white">Tara Calatei</a></li>
+              <li role="presentation"><a href="#tab-sight3" aria-controls="tab-sight3" role="tab" data-toggle="pill" class="custom-tab-pill white">Clujul istoric</a></li>
+              <li role="presentation"><a href="#tab-sight4" aria-controls="tab-sight4" role="tab" data-toggle="pill" class="custom-tab-pill white">Gradina botanica, Cluj-Napoca</a></li>
+            </ul>
+            <div class="tab-content">
+              <div role="tabpanel" class="tab-pane fade in active" id="tab-sight1">
+                <span class="glyphicon glyphicon-menu-left custom-tab-nav" aria-hidden="true" data-target="tab-sight4"></span>
+                <span class="glyphicon glyphicon-menu-right custom-tab-nav" aria-hidden="true" data-target="tab-sight2"></span>
+                <div class="col-xs-12 col-sm-6">
+                  <img src="images/atractii/turda/1.jpg" alt="Turda, Cheile Turzii" class="img-responsive" />
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                  <h4>Turda, Cheile Turzii, Salina Turda</h4>
+                  <p>Turda, al doilea mare centru urban din județul Cluj se află în partea de nord a Depresiunii Turda-Câmpia Turzii, la contactul Câmpiei Transilvaniei cu Munții Trascăului și Podișul Măhăceni. În decursul istoriei un rol extrem de important în dezvoltarea localității l-au avut zăcămintele de sare din apropiere.</p>
+                  <p>Orașul dipune de mai multe clădiri cu valoare...</p>
+                  <p><a href="#">Mai multe</a></p>
+                </div>
+              </div>
+              <div role="tabpanel" class="tab-pane fade" id="tab-sight2">
+                <span class="glyphicon glyphicon-menu-left custom-tab-nav" aria-hidden="true" data-target="tab-sight1"></span>
+                <span class="glyphicon glyphicon-menu-right custom-tab-nav" aria-hidden="true" data-target="tab-sight3"></span>
+                <div class="col-xs-12 col-sm-6">
+                  <img src="images/atractii/kalota/1.jpg" alt="Tara Calatei" class="img-responsive" />
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                  <h4>Tara Calatei</h4>
+                  <p>Kalotaszeg is one of the regions of Transylvania inhabited mainly by Hungarians and includes about forty villages and towns. Geographically lies west from Cluj among the Munții Gilăului, Munții Vlădeasa, Munții Meseșului, and the hilly Szamos-hátság. The area is now divided in four parts: “Felszeg”, “Alszeg”, “Nádas mente”, “Fenes-pataka mente”. Buffalo breeding is a speciality of the animal husbandry in the Kalotaszeg-region.</p>
+                  <p><a href="#">Mai multe</a></p>
+                </div>
+              </div>
+              <div role="tabpanel" class="tab-pane fade" id="tab-sight3">
+                <span class="glyphicon glyphicon-menu-left custom-tab-nav" aria-hidden="true" data-target="tab-sight2"></span>
+                <span class="glyphicon glyphicon-menu-right custom-tab-nav" aria-hidden="true" data-target="tab-sight4"></span>
+                <div class="col-xs-12 col-sm-6">
+                  <img src="images/atractii/cluj/1.jpg" alt="Clujul istoric" class="img-responsive" />
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                  <h4>Clujul istoric</h4>
+                  <p>Municipiul Cluj-Napoca este reşedinţa judeţului Cluj, centru industrial important, oraş universitar, capitala spirituală a Transilvaniei, un centru medical important. Câteva din cele mai importante monumentele şi obiectivele turistice din Cluj:</p>
+                  <p>&bull; Biserica romano-catolică Sf. Mihail, construită în stil gotic...</p>
+                  <p><a href="#">Mai multe</a></p>
+                </div>
+              </div>
+              <div role="tabpanel" class="tab-pane fade" id="tab-sight4">
+                <span class="glyphicon glyphicon-menu-left custom-tab-nav" aria-hidden="true" data-target="tab-sight3"></span>
+                <span class="glyphicon glyphicon-menu-right custom-tab-nav" aria-hidden="true" data-target="tab-sight1"></span>
+                <div class="col-xs-12 col-sm-6">
+                  <img src="images/atractii/gr_botanica/1.jpg" alt="Gradina botanica" class="img-responsive" />
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                  <h4>Gradina botanica, Cluj-Napoca</h4>
+                  <p>Terenul donat de contele Mikó Imre Societăţii Muzeale din Ardeal, a ajuns grădină botanică încă la sfârşitul secolului XIX. La începutul secolului XX. grădina botanică se extinde sub conducerea lui Richter Aladár. După primul război mondial, din anul 1920 profesorul Alexandru Borza conduce lucrările de extinderea și dezvoltare ale grădinii botanice.</p>
+                  <p>La ora actuală Grădina Botanică din Cluj este o instituţie...</p>
+                  <p><a href="#">Mai multe</a></p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -518,12 +551,57 @@
     <section id="contact">
       <div class="container">
         <h2>Contact</h2>
-        <div class="row">
-          <div class="col-xs-12"></div>
+        <div class="row row-no-padding">
+          <div class="col-xs-12">
+             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d87485.6226747592!2d23.388431!3d46.74664699999999!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47491ad95cca95e1%3A0xf3966c6135ac4a16!2sVila+Gong!5e0!3m2!1sen!2s!4v1396411873804" frameborder="0" style="border:0; margin-bottom:-2px;"></iframe>
+          </div>
+          <p class="m-a-0">&nbsp;</p>
+          <div class="col-xs-12 col-sm-6">
+            <div class="p-x-20">
+              <p>Adresa: 407310 Gilău, Str. Someşul Rece, Nr. 1153/C, Jud. Cluj</p>
+              <p>GPS: 46.75/23.383</p>
+              <p>Telefon: +40-264-371468, +40-723-193977</p>
+              <p>Fax: +40-264-371498</p>
+              <p>Email: info@vilagong.ro</p>
+              <p><small><span class="bold">SC Rentaporta Import Export SRL</span><br />Nr. RC: J12/2665/1993<br />Cod fiscal: 4341094</small></p>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6">
+            <div class="p-x-20">
+              <h4>Lasati-ne un mesaj</h4>
+              <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>" id="contactForm">
+                  <input type="text" name="name" class="form-control" placeholder="Nume" />
+                  <input type="email" name="email" class="form-control" placeholder="Email" />
+                  <input type="text" name="subject" class="form-control" placeholder="Subiect" />
+                  <textarea name="comments" placeholder="Mesaj" class="form-control" rows="4"></textarea>
+                  <input type="submit" class="btn btn-custom white btn-sm" name="submit" value="Trimite" />
+              </form>
+              <?php if(isset($hasError)) { //If errors are found ?>
+                  <p class="error"><b>Eroare!</b></p>
+                  <p class="error">Va rugam sa verificati corectitudinea informatiilor din fiecare camp obligatoriu al formularului. Va multumim!</p>
+              <?php } ?>
+              <?php if(isset($emailSent) && $emailSent == true) { //If email is sent ?>
+                  <p><b>Mesajul a fost trimis cu succes!</b></p>
+                  <p>Multumim <b><?php echo $name;?></b> pentru mesajul tau! Vom reveni cu un raspuns in cel mai scurt timp posibil.</p>
+              <?php } ?>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
+    <footer>
+      <div class="container">
+        <div class="row">
+              <div class="col-xs-12 col-md-6">
+                  <small>&copy <span id="currentYear"></span> Vila Gong. Toate dreturile rezervate.</small>
+              </div>
+              <div class="col-xs-12 col-md-6">
+                  <small><span class="small-break">Design by: <a href="http://inadcod.com">inadcodDesign</a>. </span><span class="small-break">Powered by: <a href="http://seewebsolutions.ro">See-Web Solutions</a></span></small>
+              </div>
+          </div>
+        </div>
+    </footer>
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
