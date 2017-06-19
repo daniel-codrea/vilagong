@@ -28,7 +28,7 @@ if(isset($_POST['submit'])) {
             $comments = trim($_POST['comments']);
         }
     }
-    
+
     if(trim($_POST['subject']) == '') {
         $subject = "Formular de contact vilagong.ro";
     } else {
@@ -64,7 +64,7 @@ if(isset($_POST['submit'])) {
               <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d87485.6226747592!2d23.388431!3d46.74664699999999!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47491ad95cca95e1%3A0xf3966c6135ac4a16!2sVila+Gong!5e0!3m2!1sen!2s!4v1396411873804" width="940" height="400" frameborder="0" style="border:0; margin-bottom:-2px;"></iframe>
           </div>
       </div>
-    
+
     <div id="siteTop">
          <div class="row">
             <div class="small-12 columns">
@@ -83,14 +83,14 @@ if(isset($_POST['submit'])) {
                 <div class="clearfix"></div>
             </div>
         </div>
-        <div id="bookings">
+        <!-- <div id="bookings">
             <p class="semibolditalic"><a href="https://vilagong.book-onlinenow.net/">Rezervari online</a></p>
-        </div>
+        </div> -->
     </div>
-      
-      
-      
-      
+
+
+
+
       <div id="menu" class="row">
         <div class="small-12 columns">
             <nav>
@@ -101,14 +101,14 @@ if(isset($_POST['submit'])) {
                             <li><a href="camere.html">Camere</a></li>
                             <li><a href="restaurant.html">Restaurant</a></li>
                             <li><a href="sala_conferinte.html">Sala de Conferinţe</a></li>
-                        </ul>    
+                        </ul>
                     </li>
                     <li><a href="galerie_foto.html">Galerie Foto</a></li>
                     <li><a href="oferte.html">Oferte</a></li>
                     <li><a href="atractii.html">Atracţii</a></li>
                     <li><a class="active" href="contact.php">Contact</a></li>
                 </ul>
-            </nav>  
+            </nav>
         </div>
     </div>
     <p class="spacer20">&nbsp;</p>
@@ -151,29 +151,29 @@ if(isset($_POST['submit'])) {
             </div>
         </div>
     </div>
-      
+
     <p class="spacer20">&nbsp;</p>
-      
+
     <footer>
-      
+
         <div class="row">
             <div class="small-6 columns">
                 <p class="small">&copy <span id="currentYear"></span> Vila Gong. Toate dreturile rezervate.</p>
-            </div>  
+            </div>
             <div class="small-6 columns">
                 <p class="small textRight">Design by: <a href="http://inadcod.com">inadcodDesign</a>. Powered by: <a href="http://seewebsolutions.ro">See-Web Solutions</a></p>
             </div>
         </div>
-        
+
     </footer>
- 
 
-    	
 
-    
+
+
+
     <script src="js/vendor/jquery.js"></script>
-    <script src="js/foundation.min.js"></script>  
-    <script src="js/bjqs-1.3.min.js"></script>  
+    <script src="js/foundation.min.js"></script>
+    <script src="js/bjqs-1.3.min.js"></script>
     <script src="js/jquery.colorbox-min.js"></script>
     <script>
         $(document).foundation();
